@@ -9,6 +9,7 @@ The fields within this section of the CIM are all related to the specific aircra
 |Airfield|flightNumber|int(4)|The numerical flight number of the aircraft|1234|
 |Airfield|serviceType|String(1)|The operational status of the flight. Refer to [serviceTypes](https://github.com/ktugwell/Splunk4Airports/blob/main/lookups/serviceTypes.csv) lookup. | J (Scheduled), C (Charter) |
 |Airfield|airline|String|The IATA code for the operating airline|EZY, DY, AA|
+|Airfield|airlineName|String|The name of the operating airline|EasyJet|
 |Airfield|FQFC|String|Fully Qualified Flight Code|EZY1234|
 |Airfield|departureOrArrival|String(1)|Is the aircraft departing or arriving|D, A|
 |Airfield|aircraftParkingPosition|String|Gate or hard stand where the aircraft is located|A10|
@@ -20,6 +21,15 @@ The fields within this section of the CIM are all related to the specific aircra
 |Airfield|registration|String|The aircraft registration number as assigned by the aircraft manufacturer|G-XWBD|
 |Airfield|agentInfo|String|Identification of the handling agent for the flight leg|MA, ALS|
 |Airfield|paxCount|String|The actual count of passengers on the aircraft|100|
+|Airfield|delay|int(10)|Flight Delay Time||
+|Airfield|distance_km|int|Route distance calculated using base lat/lon and other airport lan/lon|425|
+|Airfield|paxCapacity|int|Aircraft passenger capacity|72|
+|Airfield|bagCount|int|10|
+|Airfield|belt|String|Luggage Belt|3|
+|Airfield|beltStart|int|Belt start datetime|epoch|
+|Airfield|beltStop|int|Belt start datetime|epoch|
+|Airfield|beltTerminal|int|Belt start datetime|epoch|
+|Airlield|
 
 
 
